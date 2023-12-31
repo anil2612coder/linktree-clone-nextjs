@@ -1,7 +1,15 @@
+import Navbar from "@/components/Navbar";
+
+
 
 
 export default function Home() {
   return (
-   <div>ANil Kumar</div>
+   <main>
+  <Navbar/>
+    <section>
+
+    </section>
+   </main>
   )
 }
