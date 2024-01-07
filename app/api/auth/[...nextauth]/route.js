@@ -1,3 +1,4 @@
+
 import clientPromise from "@/libs/mongoClient";
 import { MongoDBAdapter } from "@auth/mongodb-adapter";
 import NextAuth from "next-auth"
@@ -12,5 +13,6 @@ export const authOptions = {
       })
   ],
 }
+const handler = NextAuth(authOptions)
 
-export default NextAuth(authOptions)
+export { handler as GET, handler as POST }
