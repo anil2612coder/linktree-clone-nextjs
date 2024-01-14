@@ -7,7 +7,7 @@ import Logoutbutton from "./buttons/Logoutbutton"
 
 const Navbar = async () => {
   const session = await getServerSession(authOptions);
-  console.log(session)
+ 
   return (
     <header className="bg-white py-4 border-b ">
       <div className="max-w-4xl mx-auto flex justify-between ">
@@ -24,7 +24,7 @@ const Navbar = async () => {
         (
           <>
           <Link href={"/account"} className="font-semibold text-blue-500 pr-2">
-            Hi, {session?.user?.name}
+            Hello,  {session?.user?.name.split(" ")[0]} 
           </Link>
          <Logoutbutton/>
           </>
