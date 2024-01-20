@@ -18,7 +18,7 @@ const Navbar = async () => {
         <Link href={"/price"}>Price</Link>
         <Link href={"/contact"}>Contact</Link>
        </nav>
-      </div>
+    </div>
        <nav className="flex md:gap-3 gap-1 items-center text-base text-center">
         {!!session && 
         (
