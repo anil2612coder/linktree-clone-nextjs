@@ -1,11 +1,11 @@
 "use client"
-// import { getServerSession } from 'next-auth'
+
 import { signIn } from 'next-auth/react'
 import React, { useState } from 'react'
 
 const HeroForm =  () => {
     const [text,setText] = useState("")
-    // const session = await getServerSession(authOptions);
+    
 
     async function handleSubmit (e){
        e.preventDefault()
