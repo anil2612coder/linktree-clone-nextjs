@@ -48,6 +48,9 @@ export default async function UserPage({params}) {
   await Event.create({uri:uri, page:uri, type:'view'}); 
   return (
     <div className="bg-blue-950 text-white min-h-screen">
+      <Link href="/">
+      <button className="relative left-2 top-1 border-2 rounded p-2 border-zinc-600 shadow-md">Create Your Page</button>
+      </Link>
      
       <div
         className="h-80 bg-gray-400 bg-cover bg-center "
