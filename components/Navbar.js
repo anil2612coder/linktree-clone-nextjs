@@ -16,7 +16,7 @@ const Navbar = async () => {
        <nav className="flex gap-2 sm:gap-5 font-semibold items-center font-sans text-gray-500">
         <Link href={"/account"}>View Page</Link>
         <Link href={"/price"}>Price</Link>
-        <Link href={"/contact"}>Contact</Link>
+        <Link className="hidden md:block" href={"/contact"}>Contact</Link>
        </nav>
     </div>
        <nav className="flex md:gap-3 gap-1 items-center text-base text-center">
